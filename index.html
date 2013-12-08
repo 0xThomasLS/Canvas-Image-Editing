@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Retouche d'image</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<canvas id="img" width="625" height="500"></canvas>
+
+	<script type="text/javascript" src="data.js"></script>
+	<script type="text/javascript">
+	// Initialisation
+		idCanvas = "img"; // Identifiant du canvas
+
+		// Initialisation de l'image
+		img = new Image();
+		img.src = "monImage.png";
+
+		img.onload = function() {
+			// Initialisation du canvas
+			canvas = document.getElementById(idCanvas).getContext("2d");
+			canvas.drawImage(img, 0, 0); // Affichage de l'image dans le canvas
+
+			// Données de l'image
+			imgData = canvas.getImageData(0, 0, img.width, img.height);
+			imgDestination = canvas.getImageData(0, 0, img.width, img.height);
+
+
+			// Traitement sur l'image
+
+			// Fin du traitement
+		}
+	</script>
+</body>
+</html>
