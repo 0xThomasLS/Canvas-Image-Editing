@@ -23,7 +23,7 @@
 
 			// Données de l'image
 			imgData = canvas.getImageData(0, 0, img.width, img.height);
-			imgDestination = canvas.getImageData(0, 0, img.width, img.height);
+			imgDataCopy = canvas.getImageData(0, 0, img.width, img.height);
 
 
 			// Traitement sur l'image
@@ -32,7 +32,7 @@
 			eval(include("Traitements/blackORwhite.js"));
 			eval(include("Traitements/opacity.js"));
 
-			processingFunction();
+			greyLevel();
 			// Fin du traitement
 		}
 	</script>
