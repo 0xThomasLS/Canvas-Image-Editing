@@ -11,8 +11,8 @@ function blackORwhite(limit) {
 				var N = 255;
 			}
 
-			setPixel(imgDestination, x, y, N, N, N, pixel.alpha);
+			setPixel(imgData, x, y, N, N, N, pixel.alpha);
 		}
 	}
-	canvas.putImageData(imgDestination, 0, 0);
+	canvas.putImageData(imgData, 0, 0);
 }

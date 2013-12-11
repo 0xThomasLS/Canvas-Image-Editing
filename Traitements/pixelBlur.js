@@ -22,10 +22,10 @@ function pixelBlur(nbPixel) {
 			// Affectation des nouvelles couleurs à chaque pixels
 			for(var h=0; h<nbPixel; h++) {
 				for(var v=0; v<nbPixel; v++) {
-					setPixel(imgDestination, x+h, y+v, avgR, avgG, avgB);
+					setPixel(imgData, x+h, y+v, avgR, avgG, avgB);
 				}
 			}
 		}
 	}
-	canvas.putImageData(imgDestination, 0, 0);
+	canvas.putImageData(imgData, 0, 0);
 }
