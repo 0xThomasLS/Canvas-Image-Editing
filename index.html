@@ -27,7 +27,12 @@
 
 
 			// Traitement sur l'image
+			eval(include("Traitements/pixelBlur.js"));
+			eval(include("Traitements/greyLevel.js"));
+			eval(include("Traitements/blackORwhite.js"));
+			eval(include("Traitements/opacity.js"));
 
+			processingFunction();
 			// Fin du traitement
 		}
 	</script>
