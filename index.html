@@ -23,7 +23,6 @@
 
 			// Données de l'image
 			imgData = canvas.getImageData(0, 0, img.width, img.height);
-			imgDataCopy = canvas.getImageData(0, 0, img.width, img.height);
 
 
 			// Traitement sur l'image
@@ -31,7 +30,10 @@
 			eval(include("Traitements/greyLevel.js"));
 			eval(include("Traitements/blackORwhite.js"));
 			eval(include("Traitements/opacity.js"));
+			eval(include("Traitements/horizontalSymetry.js"));
+			eval(include("Traitements/verticalSymetry.js"));
 
+			horizontalSymetry();
 			greyLevel();
 			// Fin du traitement
 		}
