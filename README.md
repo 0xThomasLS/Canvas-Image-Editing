@@ -1,7 +1,5 @@
-Canvas
-====
+# Canvas-Image-Editing
+Display and image editing
 
-Affichage et retouche d'image via un canvas
-
-Basé sur :
- - Javascript
+### Based on
+*Javascript
