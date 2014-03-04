@@ -2,4 +2,4 @@
 Display and image editing
 
 ### Based on
-*Javascript
+* Javascript
